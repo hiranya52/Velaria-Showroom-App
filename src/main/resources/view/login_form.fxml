@@ -16,7 +16,7 @@
       <Insets right="5.0" top="5.0" />
    </opaqueInsets>
    <children>
-      <SVGPath content="M0,150 C220,-100 660,-100 880,150 L880,400 L0,400 Z" fill="#061e24" layoutY="221.0" />
+      <SVGPath content="M0,150 C220,-100 660,-100 880,150 L880,400 L0,400 Z" fill="#061e24" layoutY="220.0" />
       <ImageView fitHeight="135.0" fitWidth="155.0" layoutX="365.0" layoutY="13.0">
          <image>
             <Image url="@../img/plainLogo.png" />
@@ -32,21 +32,21 @@
             <Font name="Arial Black" size="26.0" />
          </font>
       </Label>
-      <TextField layoutX="288.0" layoutY="316.0" prefHeight="40.0" prefWidth="308.0" promptText="Username">
+      <TextField fx:id="txtUsername" layoutX="288.0" layoutY="319.0" prefHeight="35.0" prefWidth="308.0" promptText="Username">
          <font>
             <Font size="14.0" />
          </font></TextField>
-      <PasswordField layoutX="289.0" layoutY="392.0" prefHeight="40.0" prefWidth="308.0" promptText="Password">
+      <PasswordField fx:id="txtPassword" layoutX="289.0" layoutY="392.0" prefHeight="35.0" prefWidth="308.0" promptText="Password">
          <font>
             <Font size="14.0" />
          </font></PasswordField>
-      <Button layoutX="344.0" layoutY="482.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="196.0" style="-fx-background-color: #add4df;" text="LogIn">
+      <Button layoutX="344.0" layoutY="471.0" mnemonicParsing="false" onAction="#btnLoginOnAction" prefHeight="37.0" prefWidth="196.0" style="-fx-background-color: #add4df;" text="LogIn">
          <font>
-            <Font name="Arial Bold" size="16.0" />
+            <Font name="Arial Black" size="13.0" />
          </font>
       </Button>
-      <Label layoutX="347.0" layoutY="544.0" text="Don't have an acccount?" textFill="#c0ecf8" />
-      <Label layoutX="488.0" layoutY="544.0" text="Register" textFill="#2bc2e8" />
+      <Label layoutX="347.0" layoutY="530.0" text="Don't have an acccount?" textFill="#c0ecf8" />
+      <Label layoutX="488.0" layoutY="530.0" onDragDetected="#txtRegisterOnAction" text="Register" textFill="#2bc2e8" />
 
    </children>
 </AnchorPane>
