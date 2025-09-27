@@ -28,7 +28,22 @@ public class LoginFormController {
 
     @FXML
     void txtRegisterOnAction(MouseEvent event) {
-        
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/register_form.fxml"));
+            Parent root = loader.load();
+
+            Stage registerStage = new Stage(); // new window for register form
+            registerStage.setScene(new Scene(root));
+            registerStage.setTitle("Register Form");
+            registerStage.show();
+
+            // close the login window
+            Stage loginStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            loginStage.close();
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
 }
