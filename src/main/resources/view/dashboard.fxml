@@ -1,8 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="620.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Dashboard">
-
+<AnchorPane prefHeight="620.0" prefWidth="880.0" styleClass="grid-background" stylesheets="@../styles/styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardController">
+   <children>
+      <ImageView fitHeight="620.0" fitWidth="888.0" layoutY="7.0">
+         <image>
+            <Image url="@../img/bg-Image.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="-1.0" prefHeight="68.0" prefWidth="889.0" style="-fx-background-color: #041519;">
+         <children>
+            <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="60.0" layoutY="5.0">
+               <image>
+                  <Image url="@../img/BgRemovedLogo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="130.0" layoutY="7.0" text="Velaria" textFill="#c0ecf8">
+               <font>
+                  <Font name="American Typewriter Bold" size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="131.0" layoutY="39.0" text="Tiles &amp; Bathwares" textFill="WHITE" />
+            <Label layoutX="495.0" layoutY="24.0" text="Home" textFill="#c0ecf8">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="564.0" layoutY="24.0" text="Bathware" textFill="#c0ecf8">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="649.0" layoutY="23.0" text="Tiles" textFill="#c0ecf8">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="709.0" layoutY="23.0" text="Accessories" textFill="#c0ecf8">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <SVGPath fx:id="cartIcon" content="M2 6h10l10 36h32l8-24H18 M20 54l-4 0l0 -4l4 0l0 4 M48 54l-4 0l0 -4l4 0l0 4" fill="#c0ecf8" layoutX="783.0" layoutY="1.0" scaleX="0.52" scaleY="0.52" stroke="BLACK" strokeWidth="1.5" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-1.0" layoutY="68.0" prefHeight="559.0" prefWidth="888.0" stylesheets="@../styles/styles.css">
+         <children>
+            <ImageView fitHeight="228.0" fitWidth="766.0" layoutX="65.0" layoutY="21.0">
+               <image>
+                  <Image url="@../img/main-Pic.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="231.0" fitWidth="371.0" layoutX="64.0" layoutY="287.0">
+               <image>
+                  <Image url="@../img/bathware-category-main-pic.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="124.0" fitWidth="365.0" layoutX="468.0" layoutY="290.0">
+               <image>
+                  <Image url="@../img/tiles-category-main-pic.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="90.0" fitWidth="364.0" layoutX="467.0" layoutY="427.0">
+               <image>
+                  <Image url="@../img/accessories-category-main-pic.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="93.0" layoutY="455.0" text="Bathware" textFill="#061e24">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="490.0" layoutY="367.0" text="Tiles" textFill="#061e24">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="492.0" layoutY="469.0" text="Accessories" textFill="#061e24">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="101.0" layoutY="157.0" prefHeight="50.0" prefWidth="221.0" style="-fx-background-color: #1f353a; -fx-background-radius: 20;">
+               <children>
+                  <Text fill="WHITE" layoutX="24.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ELEVATE YOUR SPACE">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
 </AnchorPane>
